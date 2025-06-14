@@ -1,0 +1,24 @@
+<AssistantLayout>:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 20
+
+    Label:
+        text: "Alpha Assistant"
+        font_size: '24sp'
+        size_hint_y: None
+        height: self.texture_size[1]
+
+    Button:
+        text: "Activate Assistant"
+        font_size: '20sp'
+        size_hint_y: None
+        height: 50
+        on_release: root.activate_assistant()
+
+    Button:
+        text: "Exit"
+        font_size: '20sp'
+        size_hint_y: None
+        height: 50
+        on_release: app.stop()
